@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+<<<<<<< HEAD
 import '../providers/time_entry_provider.dart';
+=======
+import '../provider/time_entry_provider.dart';
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
 import '../models/time_entry.dart';
 import 'add_time_entry_screens.dart';
 
@@ -129,16 +133,38 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+<<<<<<< HEAD
                   Icon(Icons.access_time, size: 64, color: Colors.grey),
                   SizedBox(height: 16),
                   Text(
                     'No time entries yet.',
                     style: TextStyle(fontSize: 18, color: Colors.grey),
+=======
+                  Icon(
+                    Icons.access_time,
+                    size: 64,
+                    color: Colors.grey,
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    'No time entries yet.',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.grey,
+                    ),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
                   ),
                   SizedBox(height: 8),
                   Text(
                     'Tap the + button to add your first entry',
+<<<<<<< HEAD
                     style: TextStyle(fontSize: 14, color: Colors.grey),
+=======
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
+                    ),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
                   ),
                 ],
               ),
@@ -151,13 +177,24 @@ class HomeScreen extends StatelessWidget {
                 final duration = entry.endTime.difference(entry.startTime);
                 final hours = duration.inHours;
                 final minutes = duration.inMinutes % 60;
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
                 return Card(
                   margin: const EdgeInsets.symmetric(vertical: 4),
                   child: ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.teal.shade100,
+<<<<<<< HEAD
                       child: Icon(Icons.work, color: Colors.teal.shade700),
+=======
+                      child: Icon(
+                        Icons.work,
+                        color: Colors.teal.shade700,
+                      ),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
                     ),
                     title: Text(
                       'Task: ${entry.taskId}',
@@ -181,10 +218,15 @@ class HomeScreen extends StatelessWidget {
                     trailing: IconButton(
                       icon: const Icon(Icons.delete, color: Colors.red),
                       onPressed: () {
+<<<<<<< HEAD
                         Provider.of<TimeEntryProvider>(
                           context,
                           listen: false,
                         ).removeEntry(entry.id);
+=======
+                        Provider.of<TimeEntryProvider>(context, listen: false)
+                            .removeEntry(entry.id);
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('Entry deleted')),
                         );
@@ -206,4 +248,8 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34

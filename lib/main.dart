@@ -3,7 +3,11 @@ import 'package:provider/provider.dart';
 import 'package:time_app/screens/add_time_entry_screens.dart';
 import 'package:time_app/screens/home_screen.dart';
 import 'package:time_app/screens/task_management.dart';
+<<<<<<< HEAD
 import 'package:providers/time_entry_provider';
+=======
+import 'provider/time_entry_provider.dart';
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
 
 void main() {
   runApp(

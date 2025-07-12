@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include: package:flutter_lints/flutter.yaml
+=======
+include: package:flutter_lints/flutter.yaml
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34

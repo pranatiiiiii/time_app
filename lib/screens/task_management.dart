@@ -4,12 +4,19 @@ class ProjectTaskManagementScreen extends StatefulWidget {
   const ProjectTaskManagementScreen({super.key});
 
   @override
+<<<<<<< HEAD
   State<ProjectTaskManagementScreen> createState() =>
       _ProjectTaskManagementScreenState();
 }
 
 class _ProjectTaskManagementScreenState
     extends State<ProjectTaskManagementScreen>
+=======
+  State<ProjectTaskManagementScreen> createState() => _ProjectTaskManagementScreenState();
+}
+
+class _ProjectTaskManagementScreenState extends State<ProjectTaskManagementScreen>
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -37,14 +44,32 @@ class _ProjectTaskManagementScreenState
           indicatorColor: Colors.white,
           labelColor: Colors.white,
           tabs: const [
+<<<<<<< HEAD
             Tab(icon: Icon(Icons.folder), text: 'Projects'),
             Tab(icon: Icon(Icons.assignment), text: 'Tasks'),
+=======
+            Tab(
+              icon: Icon(Icons.folder),
+              text: 'Projects',
+            ),
+            Tab(
+              icon: Icon(Icons.assignment),
+              text: 'Tasks',
+            ),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
           ],
         ),
       ),
       body: TabBarView(
         controller: _tabController,
+<<<<<<< HEAD
         children: [_buildProjectsTab(), _buildTasksTab()],
+=======
+        children: [
+          _buildProjectsTab(),
+          _buildTasksTab(),
+        ],
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
       ),
     );
   }
@@ -72,10 +97,14 @@ class _ProjectTaskManagementScreenState
             child: ListTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.green.shade100,
+<<<<<<< HEAD
                 child: Icon(
                   Icons.mobile_friendly,
                   color: Colors.green.shade700,
                 ),
+=======
+                child: Icon(Icons.mobile_friendly, color: Colors.green.shade700),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
               ),
               title: const Text('Mobile App'),
               subtitle: const Text('Flutter time tracking app'),
@@ -104,9 +133,13 @@ class _ProjectTaskManagementScreenState
             onPressed: () {
               // TODO: Add new project
               ScaffoldMessenger.of(context).showSnackBar(
+<<<<<<< HEAD
                 const SnackBar(
                   content: Text('Add Project feature coming soon!'),
                 ),
+=======
+                const SnackBar(content: Text('Add Project feature coming soon!')),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
               );
             },
             icon: const Icon(Icons.add),
@@ -145,10 +178,14 @@ class _ProjectTaskManagementScreenState
             child: ListTile(
               leading: CircleAvatar(
                 backgroundColor: Colors.indigo.shade100,
+<<<<<<< HEAD
                 child: Icon(
                   Icons.design_services,
                   color: Colors.indigo.shade700,
                 ),
+=======
+                child: Icon(Icons.design_services, color: Colors.indigo.shade700),
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
               ),
               title: const Text('UI Design'),
               subtitle: const Text('Mobile App • 1h 15m logged'),
@@ -206,4 +243,8 @@ class _ProjectTaskManagementScreenState
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34

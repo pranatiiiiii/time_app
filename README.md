@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # time_app
 
 A new Flutter project.git
@@ -14,3 +15,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# time_app
+
+Flutter project for Coursera.
+
+>>>>>>> d4939ec27669460e3183e9274df55559628ffd34
